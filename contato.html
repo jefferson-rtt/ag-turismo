@@ -65,131 +65,60 @@
                         <a href="planos.html" class="nav-link">Planos</a>
                     </li>
                     <li class="nav-item">
-                        <a href="contato.html" class="nav-link">Contato</a>
+                        <a href="contato.html" class="nav-link active">Contato</a>
                     </li>
                     <li class="nav-item">
                         <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#modalLogin"> Login</a>
                     </li>
                     <li class="nav-item">
-                        <a class="btn btn-outline-primary ms-md-2" href="inscricao.html">Inscreva-se</a>
+                        <a class="btn btn-outline-primary ms-md-2" href="incricao.html">Inscreva-se</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <section class="container-fluid">
-        <div class="row bg-dark text-white">
-            <div class="col-lg-7 p-0">
-                <div id="carouselCity" class="carousel slide" data-bs-ride="carousel">
-                    <ol class="carousel-indicators">
-                      <li data-bs-target="#carouselCity" data-bs-slide-to="0" class="active"></li>
-                      <li data-bs-target="#carouselCity" data-bs-slide-to="1"></li>
-                      <li data-bs-target="#carouselCity" data-bs-slide-to="2"></li>
-                    </ol>
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img src="./img/california.jpg" class="d-block w-100" alt="Califórnia">
-                        <div class="carousel-caption">
-                            <h3 class="display-4">Califórnia</h3>
-                        </div>
-                      </div>
-                      <div class="carousel-item">
-                        <img src="./img/paris.jpg" class="d-block w-100" alt="Paris">
-                        <div class="carousel-caption">
-                            <h3 class="display-4">Paris</h3>
-                        </div>
-                      </div>
-                      <div class="carousel-item">
-                        <img src="./img/dublin.jpg" class="d-block w-100" alt="Dublin">
-                        <div class="carousel-caption">
-                            <h3 class="display-4">Dublin</h3>
-                        </div>
-                      </div>
+    <section class="container">
+        <div class="my-5 text-center">
+            <span class="h6 d-block">POSSUI ALGUMA DÚVIDA?</span>
+            <h1 class="display-4 text-primary">Fale conosco</h1>
+        </div>
+        <div class="row">
+            <div class="col-md mb-5">
+                <form class="bg-light rounded p-4 box-shadow">
+                    <div class="mb-3">
+                        <label for="nomeCliente" class="form-label">Nome</label>
+                        <input type="password" class="form-control" id="nomeCliente">
                     </div>
-                    <a class="carousel-control-prev" href="#carouselCity" role="button" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselCity" role="button" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
-                    </a>
-                  </div>
+                    <div class="mb-3">
+                      <label for="clienteEmail" class="form-label">E-mail</label>
+                      <input type="email" class="form-control" id="clienteEmail" aria-describedby="Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="mensagemCliente" class="form-label">Mensagem</label>
+                        <textarea class="form-control" id="mensagemCliente" style="height: 100px; resize: none;"></textarea>
+                      </div>
+                    <button type="submit" class="btn btn-primary mt-4">Enviar mensagem</button>
+                  </form>
             </div>
-            <div class="col-lg-5 p-4 align-self-center">
-                <h1 class="display-4">Realize a viagem de seu sonho</h1>
-                <p class="lead">O melhor local para viajar é com a Caravan, mais de 5.000 excursões concluídas.</p>
-                <form>
-                    <div class="input-group input-group-lg">
-                        <input type="email" required class="form-control" placeholder="E-mail" aria-label="digite seu email">
-                        <button class="btn btn-primary" type="button">Inscreva-se</button>
-                    </div>
-                </form>
+            <div class="col">
+                <h2 class="h6">NOSSO ENDEREÇO</h2>
+                <a href=""><img class="img-fluid bg-light rounded mb-4 box-shadow" src="./img/mapa.png" alt=""></a>
+                    <h4 class="h6">DADOS DE CONTATO</h4>
+                        <ul class="list-unstyled">
+                            <li><a class="text-decoration-none text-secondary" href="mailto:caravan@email.com">caravan@email.com</a> </li>
+                            <li><a class="text-decoration-none text-secondary" href="tel:+55 89 99999-9999">89 99999-9999</a></li>
+                            <li class="text-secondary">De Seg. à Sex. das 08h às 18h</li>
+                        </ul>
+                    <h4 class="h6">REDES SOCIAIS</h4>
+                    <ul class="list-unstyled" style="max-width: 200px">
+                        <li><a class="btn btn-outline-secondary d-block mb-2 btn-sm" href="https://facebook.com" target="_blank">Facebook</a></li>
+                        <li><a class="btn btn-outline-secondary d-block mb-2 btn-sm" href="https://instragram.com" target="_blank">Instragram</a></li>
+                        <li><a class="btn btn-outline-secondary d-block mb-2 btn-sm" href="https://twitter.com" target="_blank">Twitter</a></li>
+                    </ul>
+
             </div>
         </div>
-    </section>
-
-    <section class="py-5 bg-light text-center">
-        <div class="container">
-            <div class="my-5">
-                <span class="h6 d-block">TUDO DE MELHOR PARA VOCÊ</span>
-                <h2 class="display-4 text-primary">Aproveite as Vantagens</h2>
-            </div>
-            <div class="row py-4">
-                <div class="col-xl-4 col-md-6 my-3">
-                    <div style="height: 100px;" class="d-flex justify-content-center">
-                        <img src="./img/icones/passaporte.svg" alt="Passaporte">
-                    </div>
-                    <h3>Documentos</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                </div>
-                <div class="col-xl-4 col-md-6 my-3">
-                    <div style="height: 100px;" class="d-flex justify-content-center">
-                        <img src="./img/icones/passagens.svg" alt="Passagens">
-                    </div>
-                    <h3>Passagens</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                </div>
-                <div class="col-xl-4 col-md-6 my-3">
-                    <div style="height: 100px;" class="d-flex justify-content-center">
-                        <img src="./img/icones/translado.svg" alt="translado">
-                    </div>
-                    <h3>Translado</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                </div>
-                <div class="col-xl-4 col-md-6 my-3">
-                    <div style="height: 100px;" class="d-flex justify-content-center">
-                        <img src="./img/icones/bagagens.svg" alt="Bagagens">
-                    </div>
-                    <h3>Bagagens</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                </div>
-                <div class="col-xl-4 col-md-6 my-3">
-                    <div style="height: 100px;" class="d-flex justify-content-center">
-                        <img src="./img/icones/turismo.svg" alt="Turismo">
-                    </div>
-                    <h3>Turismo</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                </div>
-                <div class="col-xl-4 col-md-6 my-3">
-                    <div style="height: 100px;" class="d-flex justify-content-center">
-                        <img src="./img/icones/praias.svg" alt="praias">
-                    </div>
-                    <h3>Praias</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                </div>
-            </div>
-
-            <a href="planos.html" class="btn btn-primary btn-lg">Comprar Plano</a>
-        </div>
-    </section>
-
-    <section id="home-quote" class="p-md-5">
-        <blockquote class="blockquote text-center text-white p-md-5 p-3" >
-            <p class="display-4"><em>"A felicidade não está na estrada que leva a algum lugar. A felicidade é a própria estrada."</em></p>
-            <figcaption class="blockquote-footer text-white">Bob Dylan</figcaption>
-        </blockquote>
     </section>
 
     <section class="container">
@@ -276,7 +205,6 @@
                         <li><a class="btn btn-outline-secondary d-block mb-2 btn-sm" href="https://instragram.com" target="_blank" style="max-width: 140px">Instragram</a></li>
                         <li><a class="btn btn-outline-secondary d-block mb-2 btn-sm" href="https://twitter.com" target="_blank" style="max-width: 140px">Twitter</a></li>
                     </ul>
-
                 </div>
             </div>
         </div>
