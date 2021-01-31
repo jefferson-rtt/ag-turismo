@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caravan</title>
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+<body>
+
+    <!-- MODAL LOGIN -->
+
+      <div class="modal fade" id="modalLogin" tabindex="-1" aria-labelledby="Modal Login Título" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Faça Login</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">E-mail</label>
+                      <input type="email" class="form-control" id="loginEmail" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">Senha</label>
+                      <input type="password" class="form-control" id="loginSenha">
+                    </div>
+                    <div class="mb-3 form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Mantenha conectado</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Entrar</button>
+                    <div id="emailHelp" class="form-text">Esqueceu sua senha? <a class="text-decoration-none" href="#">Clique aqui.</a></div>
+                  </form>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+
+    <!-- FIM MODAL LOGIN -->
+    <nav class="navbar navbar-expand-md fixed-top navbar-light bg-light py-3 box-shadow">
+        <div class="container-fluid d-flex">
+            <a href="index.html" class="navbar-brand">
+                <img src="./img/caravan.svg" alt="Caravan">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown" >
+                        <a href="#" class="nav-link dropdown-toggle active" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Locais</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="local.html">Califórnia</a></li>
+                            <li><a class="dropdown-item" href="local.html">Paris</a></li>
+                            <li><a class="dropdown-item" href="local.html">Dublin</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="planos.html" class="nav-link">Planos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contato.html" class="nav-link">Contato</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#modalLogin"> Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-outline-primary ms-md-2" href="incricao.html">Inscreva-se</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    
+
+    <section class="container">
+        <div class="my-5 text-center">
+            <span class="h6 d-block">TEMOS O MELHOR DESTINO DA SUA VIAGEM</span>
+            <h1 class="display-4 text-primary">Descubra Dublin</h1>
+        </div>
+    </section>
+
+
+    
+
+    <footer class="bg-dark text-white">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-md-3 col-6">
+                    <h4 class="h6">PÁGINAS</h4>
+                        <ul class="list-unstyled">
+                            <li><a class="text-decoration-none" href="planos.html">Planos</a></li>
+                            <li><a class="text-decoration-none" href="contato.html">Contato</a></li>
+                            <li><a class="text-decoration-none" href="inscricao.html">Inscreva-se</a></li>
+                        </ul>
+                </div>
+                <div class="col-md-3 col-6">
+                    <h4 class="h6">LOCAIS</h4>
+                        <ul class="list-unstyled text-decoration-none">
+                            <li><a class="text-decoration-none" href="local.html">Califórnia</a></li>
+                            <li><a class="text-decoration-none" href="local.html">Paris</a></li>
+                            <li><a class="text-decoration-none" href="local.html">Dublin</a></li>
+                        </ul>
+                </div>
+                <div class="col-md-4 col-6">
+                    <h4 class="h6">DADOS DE CONTATO</h4>
+                        <ul class="list-unstyled">
+                            <li><a class="text-decoration-none text-secondary" href="mailto:caravan@email.com">caravan@email.com</a> </li>
+                            <li><a class="text-decoration-none text-secondary" href="tel:+55 89 99999-9999">89 99999-9999</a></li>
+                            <li class="text-secondary">De Seg. à Sex. das 08h às 18h</li>
+                        </ul>
+                </div>
+                <div class="col-md-2 col-6">
+                    <h4 class="h6">REDES SOCIAIS</h4>
+                    <ul class="list-unstyled">
+                        <li><a class="btn btn-outline-secondary d-block mb-2 btn-sm" href="https://facebook.com" target="_blank" style="max-width: 140px;">Facebook</a></li>
+                        <li><a class="btn btn-outline-secondary d-block mb-2 btn-sm" href="https://instragram.com" target="_blank" style="max-width: 140px">Instragram</a></li>
+                        <li><a class="btn btn-outline-secondary d-block mb-2 btn-sm" href="https://twitter.com" target="_blank" style="max-width: 140px">Twitter</a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+        <div class="bg-primary text-center py-3">
+            <p class="mb-0">Caravan © 2017. Alguns direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="./js/bootstrap.js"></script>
+    <script type="text/javascript" src="./js/script.js"></script>
+</body>
+</html>
