@@ -29,3 +29,7 @@ body{
 .lista-plano li{
     padding: 1rem;
 }
+
+.container-nav{
+    justify-content: space-between !important;
+}
