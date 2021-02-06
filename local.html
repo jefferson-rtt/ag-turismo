@@ -11,35 +11,42 @@
 
     <!-- MODAL LOGIN -->
 
-    <div class="modal fade" id="modalLogin" tabindex="-1" aria-labelledby="Modal Login Título" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Faça Login</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">E-mail</label>
-                        <input type="email" class="form-control" id="loginEmail" aria-describedby="emailHelp">
-                        </div>
-                        <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label">Senha</label>
-                        <input type="password" class="form-control" id="loginSenha">
-                        </div>
-                        <div class="mb-3 form-check">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                        <label class="form-check-label" for="exampleCheck1">Mantenha conectado</label>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Entrar</button>
-                        <div id="emailHelp" class="form-text">Esqueceu sua senha? <a class="text-decoration-none" href="#">Clique aqui.</a></div>
-                    </form>
-                </div>
-            
-          </div>
+    <nav class="navbar navbar-expand-md fixed-top navbar-light bg-light py-3 box-shadow">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">
+                <h1 class="fs-1">GoodTrip</h1>
+                <!-- <img src="./img/caravan.svg" alt="Caravan"> -->
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown" >
+                        <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Locais</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="local.html">Fortaleza</a></li>
+                            <li><a class="dropdown-item" href="local.html">Califórnia</a></li>
+                            <li><a class="dropdown-item" href="local.html">Paris</a></li>
+                            <li><a class="dropdown-item" href="local.html">Dublin</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="planos.html" class="nav-link">Planos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contato.html" class="nav-link">Contato</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#modalLogin"> Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-outline-primary ms-md-2" href="inscricao.html">Inscreva-se</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
+    </nav>
 
 
     <!-- FIM MODAL LOGIN -->

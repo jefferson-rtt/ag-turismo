@@ -10,7 +10,6 @@
 <body>
 
     <!-- MODAL LOGIN -->
-
       <div class="modal fade" id="modalLogin" tabindex="-1" aria-labelledby="Modal Login Título" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
@@ -40,11 +39,10 @@
           </div>
         </div>
       </div>
-
-
     <!-- FIM MODAL LOGIN -->
+
     <nav class="navbar navbar-expand-md fixed-top navbar-light bg-light py-3 box-shadow">
-        <div class="container-fluid d-flex">
+        <div class="container">
             <a href="index.html" class="navbar-brand">
                 <h1 class="fs-1">GoodTrip</h1>
                 <!-- <img src="./img/caravan.svg" alt="Caravan"> -->
@@ -52,11 +50,12 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item dropdown" >
                         <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Locais</a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="local.html">Fortaleza</a></li>
                             <li><a class="dropdown-item" href="local.html">Califórnia</a></li>
                             <li><a class="dropdown-item" href="local.html">Paris</a></li>
                             <li><a class="dropdown-item" href="local.html">Dublin</a></li>
@@ -84,20 +83,152 @@
             <span class="h6 d-block">PROGRAME A VIAGEM DO SEU SONHO</span>
             <h1 class="display-4 text-primary">Inscreva-se</h1>
         </div>
-        <div class="row">
-            <div class="form-row col-lg-7">
-                <div class="form-row">
+        <div class="row ">
+            <form action="" class="col-lg">
+                <div class="row p-4 box-shadow">
                     <div class="form-group mb-3 col-md-6">
                         <label for="inputNome">Nome</label>
-                        <input type="text" id="inputNome" class="form-control" placeholder="Nome completo" aria-label="Nome completo">
+                        <input type="text" id="inputNome" class="form-control" required placeholder="Nome completo" aria-label="Nome completo">
                     </div>
-                    <div class="mb-3 col-md-6">
+                    <div class="form-group mb-3 col-md-6">
                         <label for="inputCPF">CPF</label>
-                        <input type="text" id="inputCPF" class="form-control" placeholder="000.000.000-00" aria-label="CPF">
+                        <input type="text" id="inputCPF" class="form-control" required placeholder="000.000.000-00">
+                    </div>
+                    <div class="form-group mb-3 col-md-6">
+                        <label for="inputEmail">Email</label>
+                        <input type="email" id="inputEmail" class="form-control" required placeholder="Seu melhor e-mail">
+                    </div>
+                    <div class="form-group mb-3 col-md-6">
+                        <label for="inputPassword">Senha</label>
+                        <input type="password" id="inputPassword" class="form-control" required placeholder="Cadastre sua senha">
+                    </div>
+                    <div class="form-group mb-3 col-12">
+                        <label for="inputAddress">Endereço</label>
+                        <input type="text" id="inputAddress" class="form-control" required placeholder="Logradouro">
+                    </div>
+                    <div class="form-group mb-3 col-md-6">
+                        <label for="inputCity">Cidade</label>
+                        <input type="text" id="inputCity" class="form-control" required>
+                    </div>
+                    <div class="form-group mb-3 col-md-3 col-12">
+                        <label for="inputCity">Estado</label>
+                        <select id="inputCity" class="form-select" aria-label="Selecione seu Estado">
+                            <option selected></option>
+                            <option value="1">Piauí</option>
+                            <option value="2">Goiás</option>
+                            <option value="3">São Paulo</option>
+                            <option value="4">Rio de Janeiro</option>
+                            <option value="5">Paraná</option>
+                            <option value="6">Bahia</option>
+                            <option value="7">Pernambuco</option>
+                            <option value="8">Ceará</option>
+                        </select>
+                    </div>
+                    <div class="form-group mb-3 col-md-3 col-12">
+                        <label for="inputCep">CEP</label>
+                        <input type="text" id="inputCep" class="form-control" required placeholder="00.0000-00">
+                    </div>
+    
+                    <div class="form-group mb-3 py-3 col-12 bg-light">
+                        <h2 class="h5 text-primary">FORMA DE PAGAMENTO</h2>
+                        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link active btn btn-primary m-1" id="pills-home-tab" data-bs-toggle="tab" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Cartão de Crédito</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link btn btn-primary m-1" id="pills-profile-tab" data-bs-toggle="tab" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Boleto Bancário</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content " id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                                <div class="row p-4 box-shadow">
+                                    <div class="form-group mb-3 col-md-8">
+                                        <label for="inputCard">Número do cartão</label>
+                                        <input type="text" id="inputCard" class="form-control" required placeholder="0000 0000 0000 0000">
+                                    </div>
+                                    <div class="form-group mb-3 col-md-2">
+                                        <label for="inputVal">Mês</label>
+                                        <select id="inputVal" class="form-select" aria-label="Selecione seu Estado">
+                                            <option selected></option>
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                            <option>6</option>
+                                            <option>7</option>
+                                            <option>8</option>
+                                            <option>9</option>
+                                            <option>10</option>
+                                            <option>11</option>
+                                            <option>12</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group mb-3 col-md-2">
+                                        <label for="inputVali">Ano</label>
+                                        <select id="inputVali" class="form-select" aria-label="Selecione seu Estado">
+                                            <option selected></option>
+                                            <option>2021</option>
+                                            <option>2022</option>
+                                            <option>2023</option>
+                                            <option>2024</option>
+                                            <option>2025</option>
+                                            <option>2026</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group mb-3 col-md">
+                                        <label for="inputName">Nome do Titular</label>
+                                        <input type="text" id="inputName" class="form-control" required placeholder="Nome impresso no Cartão">
+                                        </select>
+                                    </div>
+                                    <div class="form-group mb-3 col-md-3">
+                                        <label for="inputName">CVV</label>
+                                        <input type="text" id="inputName" class="form-control" required placeholder="000">
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                                <p>Clique em contratar plano que enviaremos o boleto para o seu email cadastrado.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                        <label class="form-check-label" for="flexCheckChecked">
+                            Concordo com os <a href="#">Termos e Condições</a>.
+                        </label>
+                    </div>
+                </div>
+            </form>
+            <div class="col-lg-5 order-first order-lg-1 ms-auto mb-5">
+                <div class="bg-light rounded p-4 box-shadow">
+                    <h2 class="h6 text-primary mb-4">PLANO ESCOLHIDO</h2>
+                    <h2>Platinun <span class="badge bg-success">Novo</span></h2>
+                    <ul class="lista-plano list-unstyled">
+                        <li>→ 30 dias de viagem</li>
+                        <li>→ 7 destinos diferentes</li>
+                        <li>→ Tudo pago pela empresa</li>
+                        <li>→ Ingressos para festas Locais</li>
+                    </ul>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Selecione o destino</option>
+                        <option value="1">Califórnia</option>
+                        <option value="2">Paris</option>
+                        <option value="3">Dublin</option>
+                    </select>
+                    <div class="row mt-3">
+                        <div class="col">
+                            <span class="h4">R$ 7.500,00</span>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </div>  
+
+
+
+
     </section>
 
     

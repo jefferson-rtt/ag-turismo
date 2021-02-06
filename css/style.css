@@ -1,5 +1,7 @@
 body{
     padding-top: 75px;
+    /* background: #dadcdd; */
+    color: darkslategray;
 }
 .box-shadow {
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .05),
@@ -30,6 +32,12 @@ body{
     padding: 1rem;
 }
 
-.container-nav{
-    justify-content: space-between !important;
+
+.btn-primary{
+    background: orange;
+    border: none;
+}
+
+.btn-outline-primary{
+    border: 1px solid orange;   
 }
